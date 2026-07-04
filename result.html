@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kết quả - Nhà</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#fff9f0] min-h-screen">
+  <div class="max-w-md mx-auto bg-white min-h-screen shadow-2xl">
+
+    <!-- Header -->
+    <div class="p-5 border-b flex items-center justify-between bg-white sticky top-0">
+      <a href="planner.html" class="text-2xl">←</a>
+      <h1 class="font-bold text-xl">Nhà gợi ý cho bạn</h1>
+      <div></div>
+    </div>
+
+    <div class="p-6 space-y-8">
+
+      <!-- Lựa chọn tối ưu -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-medium">LỰA CHỌN TỐI ƯU</span>
+        </div>
+        <div class="border-2 border-green-500 rounded-3xl overflow-hidden">
+          <img src="https://picsum.photos/id/1015/600/280" class="w-full h-44 object-cover">
+          <div class="p-5">
+            <div class="flex justify-between">
+              <h3 class="font-bold text-lg">The Coffee House Nguyễn Văn Bình</h3>
+              <span class="text-green-600 font-medium">98%</span>
+            </div>
+            <p class="text-sm text-gray-600">Phù hợp nhất với bạn</p>
+
+            <div class="grid grid-cols-2 gap-4 mt-5 text-sm">
+              <div>📍 Khoảng cách: <span class="font-medium">1.2 km</span></div>
+              <div>🚶 Thời gian: <span class="font-medium">5 phút</span></div>
+              <div>⏱️ Chờ: <span class="font-medium text-green-600">5 phút</span></div>
+              <div>📢 Độ ồn: <span class="font-medium">Thấp</span></div>
+              <div>🪑 Chỗ ngồi: <span class="font-medium">72%</span></div>
+              <div>📶 Wifi: <span class="font-medium text-green-600">Mạnh</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gợi ý thêm -->
+      <div>
+        <h3 class="font-semibold mb-4">Gợi ý thêm cho bạn</h3>
+        
+        <!-- Store 2 -->
+        <div class="mb-6 border rounded-3xl overflow-hidden">
+          <img src="https://picsum.photos/id/201/600/200" class="w-full h-40 object-cover">
+          <div class="p-5">
+            <h4 class="font-semibold">The Coffee House Hai Bà Trưng</h4>
+            <p class="text-sm text-gray-600">Phù hợp 78%</p>
+            <div class="text-xs grid grid-cols-2 gap-y-2 mt-4">
+              <div>📍 Cách bạn 2.8 km</div>
+              <div>🚶 12 phút</div>
+              <div>⏱️ Chờ: 12 phút</div>
+              <div>📢 Độ ồn: Trung bình</div>
+              <div>🪑 Chỗ ngồi: 65%</div>
+              <div>📶 Wifi: Tốt</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store 3 -->
+        <div class="border rounded-3xl overflow-hidden">
+          <img src="https://picsum.photos/id/301/600/200" class="w-full h-40 object-cover">
+          <div class="p-5">
+            <h4 class="font-semibold">The Coffee House Pasteur</h4>
+            <p class="text-sm text-gray-600">Phù hợp 65%</p>
+            <div class="text-xs grid grid-cols-2 gap-y-2 mt-4">
+              <div>📍 Cách bạn 3.5 km</div>
+              <div>🚶 15 phút</div>
+              <div>⏱️ Chờ: 8 phút</div>
+              <div>📢 Độ ồn: Thấp</div>
+              <div>🪑 Chỗ ngồi: 85%</div>
+              <div>📶 Wifi: Mạnh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Buttons -->
+    <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t p-5 flex gap-4">
+      <button onclick="window.location.href='planner.html'" 
+              class="flex-1 border border-amber-600 text-amber-600 py-4 rounded-2xl font-semibold">
+        Tìm lại
+      </button>
+      <button onclick="alert('Đang chuyển đến đặt món... (demo)')" 
+              class="flex-1 bg-orange-500 text-white py-4 rounded-2xl font-semibold">
+        Đặt món trước
+      </button>
+    </div>
+  </div>
+</body>
+</html>
